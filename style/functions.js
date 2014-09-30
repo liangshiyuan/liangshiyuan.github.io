@@ -21,7 +21,7 @@ $(window).resize(
 		var b=$(window).width();
 		var a=$(window).height();
 		if(b!=clientWidth&&a!=clientHeight){
-		location.replace(location)
+			location.replace(location)
 		}
 	}
 );
@@ -72,8 +72,10 @@ function startHeartAnimation(){
 				}
 				d.html(c.substring(0,b)+(b&1?"_":""));
 				if(b>=c.length){
-					clearInterval(e)}},75)
-				});
+					clearInterval(e)
+				}
+			},75)
+		});
 		return this
 	}
 })(jQuery);
@@ -93,7 +95,7 @@ function timeElapse(c){
 	$("#elapseClock").html(a)
 }
 function showMessages(){
-	$("#messages").fadeIn(5000,function(){showLoveU()})
+	$("#messages").fadeIn(1000,function(){showLoveU()})
 }
 function adjustWordsPosition(){
 	$("#words").css("position","absolute");
@@ -104,5 +106,5 @@ function adjustCodePosition(){
 	$("#code").css("margin-top",($("#garden").height()-$("#code").height())/2)
 }
 function showLoveU(){
-	$("#loveu").fadeIn(3000)
+	$("#loveu").fadeIn(1000)
 };
